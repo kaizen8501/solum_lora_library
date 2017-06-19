@@ -1,0 +1,8 @@
+---- sendCmd Matches (7 in 2 files) ----
+65:	if( SendCmdWithTag("AT+RST\r\n", "JOINED", NULL, JOIN_TIMEOUT) == TAG_ERROR)
+80:	if( SendCmdWithTag(dataBuf, "RX DONE", NULL, DATA_SEND_TIMEOUT) == TAG_ERROR)
+90:    sendCmd(F("AT+MINFO\r"));
+114:int SKT_LoRaDrv::sendCmd(const char* cmd, int timeout, ...)
+143:int SKT_LoRaDrv::SendCmdWithTag(const char* cmd, const char* tag, const char* tag2, int timeout)
+55:    static int  sendCmd         (const char* cmd, int timeout=1000, ...);
+56:    static int SendCmdWithTag(const char* cmd, const char* tag, const char* tag2, int timeout);
